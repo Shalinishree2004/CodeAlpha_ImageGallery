@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>The   Galleria</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- Elegant Gallery Title -->
+  <h1><span class="galleria-title">The   Galleria</span></h1>
+
+  <!-- Filter Buttons -->
+  <div class="filter-buttons">
+    <button onclick="filterImages('all')">All</button>
+    <button onclick="filterImages('mindspace')">MindSpace</button>
+    <button onclick="filterImages('peaces')">Peaces</button>
+    <button onclick="filterImages('delights')">Delights</button>
+  </div>
+
+  <!-- Gallery Grid -->
+  <div class="gallery">
+    <img src="https://i.postimg.cc/jS4d9L32/download.jpg" class="gallery-img mindspace" onclick="openLightbox(this)">
+    <img src="https://i.postimg.cc/yYXH62mr/1.jpg" class="gallery-img peaces" onclick="openLightbox(this)">
+    <img src="https://i.postimg.cc/HLG5dcTg/cookies.jpg" class="gallery-img delights" onclick="openLightbox(this)">
+    <img src="https://i.postimg.cc/G34t23tg/image.jpg" class="gallery-img mindspace" onclick="openLightbox(this)">
+    <img src="https://i.postimg.cc/zf3ZjB99/download-2.jpg" class="gallery-img peaces" onclick="openLightbox(this)">
+    <img src="https://i.postimg.cc/2SS9htW6/image.jpg" class="gallery-img delights" onclick="openLightbox(this)">
+    <img src="https://i.postimg.cc/6pXpYd0F/image.jpg" class="gallery-img mindspace" onclick="openLightbox(this)">
+    <img src="https://i.postimg.cc/9Mr9CGsJ/download-4.jpg" class="gallery-img peaces" onclick="openLightbox(this)">
+    <img src="https://i.postimg.cc/PqL6F82n/rose-hawthorne-marriage-for-one.jpg" class="gallery-img delights" onclick="openLightbox(this)">
+    <img src="https://i.postimg.cc/VLZGmRSb/Brown-Aesthetic-Inspiration-Warm-Earthy-Visuals.jpg" class="gallery-img mindspace" onclick="openLightbox(this)">
+    <img src="https://i.postimg.cc/FzgMTJGV/download-3.jpg" class="gallery-img peaces" onclick="openLightbox(this)">
+    <img src="https://i.postimg.cc/7ZbR2cvV/browniee.jpg" class="gallery-img delights" onclick="openLightbox(this)">
+  </div>
+
+  <!-- Lightbox View -->
+  <div id="lightbox" class="lightbox">
+    <span class="close" onclick="closeLightbox()">×</span>
+    <img class="lightbox-img" id="lightbox-img">
+    <div class="nav">
+      <button onclick="prevImage()">❮</button>
+      <button onclick="nextImage()">❯</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <p>© 2025 The Galleria | Designed by Shalini Shree</p>
+    <div class="social-icons">
+      <a href="https://github.com/Shalinishree2004" target="_blank" title="GitHub">
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" alt="GitHub">
+      </a>
+      <a href="https://linkedin.com/in/shalinishree2004" target="_blank" title="LinkedIn">
+        <img src="https://cdn-icons-png.flaticon.com/512/174/174857.png" alt="LinkedIn">
+      </a>
+    </div>
+  </footer>
+</body>
+</html>
